@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/forgot.css">
+    <title>SIT Blog</title>
+  <link rel="icon" href="../1.png">
+</head>
+<body>
+    <div style="height: 100vh;">
+        <%- nav %>
+        <div class="page">
+            <div class="wrap-forgot">
+                <div class="wrap-forgot-content">
+                    <div>
+                        <a href="/toprofile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="35" viewBox="0 0 45 35" fill="none">
+                                <g clip-path="url(#clip0_193_4973)">
+                                  <path d="M20.0153 33.815C19.4277 34.4024 18.6309 34.7324 17.8 34.7324C16.9692 34.7324 16.1723 34.4024 15.5847 33.815L1.48475 19.715C0.897339 19.1274 0.567352 18.3306 0.567352 17.4998C0.567352 16.6689 0.897339 15.8721 1.48475 15.2845L15.5847 1.18449C16.1757 0.613731 16.9672 0.297909 17.7887 0.30505C18.6103 0.312187 19.3962 0.641716 19.9771 1.22266C20.5581 1.80361 20.8876 2.58949 20.8947 3.41104C20.9019 4.23259 20.586 5.02407 20.0153 5.61502L11.5333 14.3664L41.3 14.3664C42.131 14.3664 42.928 14.6965 43.5156 15.2842C44.1032 15.8718 44.4333 16.6687 44.4333 17.4998C44.4333 18.3308 44.1032 19.1277 43.5156 19.7154C42.928 20.303 42.131 20.6331 41.3 20.6331L11.5333 20.6331L20.0153 29.3845C20.6027 29.9721 20.9327 30.7689 20.9327 31.5998C20.9327 32.4306 20.6027 33.2274 20.0153 33.815Z" fill="#3399CC"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_193_4973">
+                                    <rect width="45" height="35" fill="white" transform="matrix(-1 0 0 -1 45 35)"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="forgot-content1">Reset Password</div>
+                    <form action="/reset" method="get" class="wrap-forgot-input">
+                        <div class="forgot-content-input" >
+                            <div class="content-input">Old password</div>
+                            <input type="text" name="oldPassword" id="" placeholder="Enter your old password" class="forgot_input" required>
+                        </div>
+                        <div class="forgot-content-input"> 
+                            <div class="content-input">New password</div>
+                            <input type="password" name="newPassword" id="" placeholder="Enter your new password" class="forgot_input" required>
+                        </div>
+                        <div><input type="submit" value="Confirm" class="forgot_submit"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

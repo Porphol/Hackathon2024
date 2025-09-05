@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/successfully.css">
+    <title>SIT Blog</title>
+  <link rel="icon" href="../1.png">
+</head>
+<body>
+    <div style="height: 100vh;">
+      <%- nav %>
+        <div class="page">
+            <div class="wrap-succest_content">
+                <div class="wrap-logo">
+                    <svg class="logo1" xmlns="http://www.w3.org/2000/svg" width="224" height="170" viewBox="0 0 224 170" fill="none">
+                        <path d="M2 85L29.5 57.5L84.5 112.5L194.5 2.5L222 30L84.5 167.5L2 85Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="content-under-logo">
+                    <div class="text1">Success!</div>
+                    <div class="text2"><%= message %></div>
+                </div>
+                <div class="wrap-link"><%- goto %></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

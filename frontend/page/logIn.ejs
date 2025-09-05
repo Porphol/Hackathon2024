@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/logIn.css">
+    <title>SIT Blog</title>
+  <link rel="icon" href="../1.png">
+
+</head>
+<body>
+    <div style="height: 100vh;">
+
+      <%- nav %>
+
+        <div class="page">
+            <div class="wrap-login">
+                <div class="wrap-login-content">
+                    <div class="login_content-1">
+                        <div class="login_text-1">Welcome back!</div>
+                        <div class="login_text-2">Enter your Credentials to access your account</div>
+                    </div>
+                    <form action="/login" method="get" class="wrap-form-login">
+                        <div class="login_content-input">
+                            <div class="login_text-3">Email address</div>
+                            <input type="email" name="mail" id="" placeholder="Enter your email" class="login_input">
+                        </div>
+                        <div class="login_content-input">
+                            <div class="wrap-password-content">
+                                <div class="login_text-3">Password</div>
+                                <div><a href="/toforgot" class="login_text-forget">Forgot password</a></div>
+                            </div>
+                            <input type="password" name="password" id="" placeholder="Enter your password" class="login_input">
+                        </div>
+                        <div style="width: 100%;">
+                            <input type="submit" value="Login" class="login_submit">
+                        </div>
+                    </form>
+                    <div class="login_content-2">
+                        Don't have an account? <a href="/tosignup">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

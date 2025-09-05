@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wrap-unsuccest_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 136px;
+}
+
+.wrap-logo {
+    border-radius: 314px;
+background: #F25E5E;
+width: 314px;
+height: 314px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.content-under-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text1 {
+    color: #000;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.text2 {
+    color: rgba(0, 0, 0, 0.30);
+text-align: center;
+
+/* Navbar text */
+font-family: Coustard;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+overflow-wrap: break-word;
+}
+.wrap-link {
+    display: inline-flex;
+    border-radius: 10px;
+background: #F25E5E;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+.wrap-link a {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    
+    /* Navbar text */
+    font-family: Coustard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

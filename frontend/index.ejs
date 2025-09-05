@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sit Blog</title>
+  <link rel="icon" href="./1.png">
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <%- nav %>
+
+    <div class="empty" style="height: 136px"></div>
+    <!-- Popular Blog , Create Blog -->
+    <div class="content">
+      <div class="headAndButton">
+        <div class="popBlog">
+          <p>
+            <%= head %>
+          </p>
+        </div>
+
+        <div class="createBtn">
+          <%- btCreateBlog %>
+        </div>
+      </div>
+
+      <div class="contentCard">
+        <% putContent.forEach(function(content) { %>
+          <a href="/tocontent?idPost=<%= content.idPost %>">
+            <div class="card">
+              <div class="innerCard">
+                <div class="pic">
+                  <i class="fa-solid fa-heart" id="heart" onclick="Like()"></i>
+                  <img src="<%= content.urlpicture %>" alt="Picture" />
+                </div>
+                <div class="title">
+                  <%= content.postTitle %>
+                </div>
+                <div class="category">
+                  <% if (content.typeSIT) { %>
+                    <div id="SIT">
+                      <p>SIT</p>
+                    </div>
+                    <% } %>
+                      <% if (content.typeIT) { %>
+                        <div id="IT">
+                          <p>IT</p>
+                        </div>
+                        <% } %>
+                          <% if (content.typeCS) { %>
+                            <div id="CS">
+                              <p>CS</p>
+                            </div>
+                            <% } %>
+                              <% if (content.typeDSI) { %>
+                                <div id="DSI">
+                                  <p>DSI</p>
+                                </div>
+                                <% } %>
+                </div>
+
+                <div class="userAndDate">
+                  <div class="info">
+                    <span>
+                      <%= content.name %>
+                    </span>
+                    <span>
+                      Like: <%= content.popularRate %>
+                    </span>
+                  </div>
+                  <div class="date">
+                    <%= content.editDate %>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <% }); %>
+      </div>
+    </div>
+    <script>
+      heart = document.querySelector('.fa-heart');
+      function Like() {
+        heart.classList.toggle('heartToggle');
+      }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIT Blog</title>
+  <link rel="icon" href="../1.png">
+  <link rel="stylesheet" href="./../css/nav.css">
+  <link rel="stylesheet" href="./../css/edit.css">
+</head>
+
+<%- nav %>
+
+  <div class="empty" style="height: 136px"></div>
+  <div class="content">
+    <div class="head">
+
+      <div>
+        <a href="/tocontent?idPost=<%= idPost %>">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="36" viewBox="0 0 45 36" fill="none">
+            <path
+              d="M20.015 34.315C19.4275 34.9024 18.6306 35.2324 17.7998 35.2324C16.9689 35.2324 16.1721 34.9024 15.5845 34.315L1.4845 20.215C0.897095 19.6274 0.567108 18.8306 0.567108 17.9998C0.567108 17.1689 0.897095 16.3721 1.4845 15.7845L15.5845 1.68449C16.1755 1.11373 16.9669 0.797909 17.7885 0.80505C18.61 0.812187 19.3959 1.14172 19.9769 1.72266C20.5578 2.30361 20.8873 3.08949 20.8945 3.91104C20.9016 4.73259 20.5858 5.52407 20.015 6.11502L11.5331 14.8664L41.2998 14.8664C42.1308 14.8664 42.9278 15.1965 43.5154 15.7842C44.103 16.3718 44.4331 17.1687 44.4331 17.9998C44.4331 18.8308 44.103 19.6277 43.5154 20.2154C42.9278 20.803 42.1308 21.1331 41.2998 21.1331L11.5331 21.1331L20.015 29.8845C20.6024 30.4721 20.9324 31.2689 20.9324 32.0998C20.9324 32.9306 20.6024 33.7274 20.015 34.315Z"
+              fill="#336699" />
+          </svg>
+        </a>
+      </div>
+      <div>
+        <p>Edit Blog</p>
+      </div>
+      <div class="empty"></div>
+    </div>
+    <form action="/updateContent" method="get">
+      <div class="title">
+        <label for="">Post Title</label>
+        <textarea name="title" id="" placeholder="Title name" class="textbox"
+          required><%= oldContent.postTitle %></textarea>
+      </div>
+      <div class="discription">
+        <label for="">Description</label>
+        <textarea name="description" id="" placeholder="Content"
+          class="textbox"><%= oldContent.description %></textarea>
+      </div>
+      <div class="url">
+        <label for="">URL picture</label>
+        <textarea name="picture" id="" placeholder="URL Picture" class="textbox"><%= oldContent.urlpicture %></textarea>
+      </div>
+      <div class="post">
+        <div class="checkbox">
+          <div class="group">
+            <input type="checkbox" name="SIT" value="SIT" id="SIT" <% if (oldContent.typeSIT) { %> checked <% } %>>
+              <label for="check1"><span>SIT</span></label>
+          </div>
+          <div class="group">
+            <input type="checkbox" name="IT" value="IT" id="IT" <% if (oldContent.typeIT) { %> checked <% } %>>
+              <label for="check2"><span>IT</span></label>
+          </div>
+          <div class="group">
+            <input type="checkbox" name="CS" value="CS" id="CS" <% if (oldContent.typeCS) { %> checked <% } %>>
+              <label for="check3"><span>CS</span></label>
+          </div>
+          <div class="group">
+            <input type="checkbox" name="DSI" value="DSI" id="DSI" <% if (oldContent.typeDSI) { %> checked <% } %>>
+              <label for="check4"><span>DSI</span></label>
+          </div>
+        </div>
+        <div class="postBtn">
+          <button type="submit">Post</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </body>
+
+</html>

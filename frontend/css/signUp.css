@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wrap-signup {
+    border-radius: 20px;
+    background: var(--Primary-Color, #369);
+    box-shadow: 1px 15px 33.3px 0px rgba(0, 0, 0, 0.50);
+    padding: 9px 17px;
+    width: 450px;
+    margin-top: 136px;
+}
+
+.wrap-signup-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+    gap: 27px;
+}
+
+.signup-content1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    align-self: stretch;
+}
+
+.wrap-form-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 100%;
+}
+
+.wrap-signup-input_content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.signup-input_content {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.signup-input {
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--muted, #D9D9D9);
+}
+
+.signup-input::placeholder {
+    color: var(--muted, #D9D9D9);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.signup-submit {
+    width: 100%;
+    padding: 4px 91px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--hover, #97DBFD);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    border-width: 0;
+}
+
+.signup-content2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.signup-content2 a {
+    color: #97DBFD;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

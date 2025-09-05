@@ -1,0 +1,184 @@
+body {
+  background: var(--Background-color);
+}
+
+.content {
+  width: 85%;
+  margin: auto;
+}
+
+.headAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.popBlog {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--Coustard);
+  color: var(--primary-color);
+  font-size: 30px;
+
+}
+
+.createBtn .btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-family: var(--Coustard);
+  color: var(--white-color);
+  background: var(--secondary-color);
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.contentCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.contentCard a {
+  text-decoration: none;
+  color: black;
+
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px var(--primary-color) solid;
+  background: linear-gradient(to right, #6eb0d1, #3399CC, #336699);
+
+}
+
+.contentCard .card {
+  overflow: hidden;
+  width: 340px;
+  height: 450px;
+  color: white;
+}
+
+.contentCard .card .innerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background: var(--Background-color);
+
+}
+
+.card .pic {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.card .pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+.innerCard .title {
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  font-family: var(--Poppins);
+  line-height: 20px;
+
+}
+
+.innerCard .category {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 14px;
+
+}
+
+.category div {
+  width: 50px;
+  display: flex;
+  width: 30px;
+  height: 20px;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.category #SIT {
+  background: rgba(0, 46, 255, 0.2);
+  color: #9edaff;
+}
+
+.category #IT {
+  background: rgba(36, 255, 0, 0.20);
+  color: #83ff70;
+}
+
+.category #CS {
+  background: rgba(255, 0, 0, 0.20);
+  color: rgb(255, 124, 124);
+}
+
+.category #DSI {
+  background: rgba(219, 0, 255, 0.20);
+  color: #f08fff;
+}
+
+.innerCard .userAndDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: var(--Poppins);
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--Poppins);
+  margin-top: 10px;
+}
+
+.innerCard .userAndDate .date {
+  align-self: flex-end;
+}
+
+.innerCard .userAndDate .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.fa-heart {
+  font-size: 40px;
+  position: absolute;
+  color: grey;
+  top: 10px;
+  right: 10px;
+}
+
+.heartToggle {
+  color: #FF69B4;
+}
+
+
+

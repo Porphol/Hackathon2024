@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../css/nav.css">
+  <link rel="stylesheet" href="./../css/logIn.css">
+  <link rel="stylesheet" href="./../css/signUp.css">
+  <title>SIT Blog</title>
+  <link rel="icon" href="../1.png">
+</head>
+
+<body>
+  <div style="height: 100vh;">
+
+    <%- nav %>
+
+    <div class="page">
+      <div class="wrap-signup">
+        <div class="wrap-signup-content">
+          <div class="signup-content1">Get Started Now</div>
+
+          <form action="/signup" method="get" class="wrap-form-signup">
+            <div class="wrap-signup-input_content">
+              <div class="signup-input_content">Name</div>
+              <input type="text" name="name" id="" placeholder="Enter your name" class="signup-input" required>
+            </div>
+            <div class="wrap-signup-input_content">
+              <div class="signup-input_content">Email address</div required>
+              <input type="email" name="mail" id="" placeholder="Enter your email" class="signup-input">
+            </div>
+            <div class="wrap-signup-input_content">
+              <div class="signup-input_content">Password</div>
+              <input type="password" name="password" id="" placeholder="Enter your password" class="signup-input" required>
+            </div>
+            <div>
+              <input type="submit" value="Sign up" class="signup-submit">
+            </div>
+          </form>
+          <div class="signup-content2">
+            Have an account? <a href="/tologin">Login</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
